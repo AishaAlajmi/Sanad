@@ -12,6 +12,7 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import ChatIcon from '@mui/icons-material/Chat';
+import AccessibilityIcon from '@mui/icons-material/Accessibility';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -142,6 +143,23 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+
+            {/* New SANAD section */}
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0 5px 20px" }}
+            >
+              Interactive Assistant
+            </Typography>
+            <Item
+              title="SANAD"
+              to="https://ddna-mosanid--sanad.soului.dh.soulmachines.cloud/?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDY2MTY1NTIsImlzcyI6InNpZ25lZF91cmwtZjM1ZjYxYWMtODhjYy00YTlmLTk2YTAtMmNmMGYwODZkZmI4IiwiZXhwIjoxODMyOTMwMTUyLCJlbWFpbCI6Im1vc2FuaWQtLXNhbmFkQGRkbmEuc3R1ZGlvIiwic291bElkIjoiZGRuYS1tb3NhbmlkLS1zYW5hZCJ9.L-1YVcDqZFfJsOAYuQUQA38Yb9bJRSa3Er0MyuVEAdY"
+              icon={<AccessibilityIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
             <Typography
               variant="h6"
               color={colors.grey[300]}
