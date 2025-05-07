@@ -30,10 +30,10 @@ function App() {
     location.pathname === '/practice-question' ||
     location.pathname === '/session-complete' ||
     location.pathname === '/QFeedback' ||
-    location.pathname === '/Waiting-Competition'||
-    location.pathname === '/Comp-Q'||
-    location.pathname === '/Rank-List'||
-    location.pathname === '/Calculating-Results'||
+    location.pathname === '/Waiting-Competition' ||
+    location.pathname === '/Comp-Q' ||
+    location.pathname === '/Rank-List' ||
+    location.pathname === '/Calculating-Results' ||
     location.pathname === '/leader-board';
 
   return (
